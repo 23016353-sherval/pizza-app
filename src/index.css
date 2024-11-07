@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+* {
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000;
+    list-style-type: none;
+    font-size: 24px;
+}
+.all-pizzas {
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* 3 columns with the first column being larger */
+    gap: 1rem; /* Space between the image and details */
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: center;
+}
+.pizza-item {
+    display: grid;
+    gap: 1rem; /* Space between the image and details */
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: center;
+    justify-items: center;
+}
+.pizza-item img {
+    width: 20rem;
+    height: auto;
+}
+.pizza-item .price {
+    font-weight: bold;
+    color: #333;
+}
+.pizza-item .ingredients {
+    color: #555;
+}
+.pizza-item .soldOut {
+    font-weight: bold;
+    color: red;
+    text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;    
+}
+
+.tagline {
+    margin: 2rem 0 0;
+    font-size: 1.2rem; 
+}
+
+footer {
+    margin: 3rem;
 }
